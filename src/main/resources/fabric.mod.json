@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
-  "name": "ExampleMod",
-  "icon": "assets/examplemod/examplemod.icon.png",
+  "id": "nyx",
+  "name": "Nyx",
+  "icon": "assets/nyx/nyx.icon.png",
   "version": "${version}",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.author.examplemod.impl.ExampleMod"
+      "net.scirave.nyx.impl.Nyx"
     ]
   },
   "mixins": [
-    "mixins.examplemod.json"
+    "mixins.nyx.json"
   ],
   "authors": [
-    "Me!"
+    "SciRave"
   ],
   "depends": {
     "fabricloader": "*"
   },
   "description": "A multi-version example mod",
-  "license": "CC0-1"
+  "license": "MPL-2"
 }

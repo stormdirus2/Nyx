@@ -18,7 +18,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.21")
     compileOnly("org.spongepowered:mixin:0.8.5")
 
-    if ("$platform" == "1.12.2-forge" || "$platform" == "1.8.9-forge") {
+    if ("$platform" == "1.12.2-forge") {
         implementation("gg.essential:loader-launchwrapper:1.1.3")
     }
 }
@@ -32,7 +32,7 @@ tasks.jar {
             "FMLModType" to "MOD",
             "TweakClass" to "gg.essential.loader.stage0.EssentialSetupTweaker",
             "TweakOrder" to "0",
-            "MixinConfigs" to "mixins.examplemod.json"
+            "MixinConfigs" to "mixins.nyx.json"
         ))
 
     }
@@ -49,7 +49,7 @@ loom {
         }
 
         forge {
-            mixinConfig("mixins.examplemod.json")
+            mixinConfig("mixins.nyx.json")
             // And maybe an access transformer?
             // Though try to avoid these, cause they are not automatically translated to Fabric's access widener
             //accessTransformer(project.parent.file("src/main/resources/example_at.cfg"))

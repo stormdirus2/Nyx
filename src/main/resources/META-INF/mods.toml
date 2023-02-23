@@ -1,13 +1,13 @@
 modLoader = "javafml"
 loaderVersion = "[0,999]"
-license = "CC0"
+license = "MPL-2"
 
 [[mods]]
-modId = "examplemod"
+modId = "nyx"
 version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
+displayName = "Nyx"
+authors = "SciRave"
 description = '''
-A multi-version example mod
+A multi-version mob/difficulty overhaul
 '''
-logoFile = "examplemod.icon.png"
+logoFile = "nyx.icon.png"

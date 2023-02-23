@@ -1,8 +1,8 @@
 [{
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "A multi-version example mod",
+  "modid": "nyx",
+  "name": "Nyx",
+  "description": "A multi-version mob/difficulty overhaul",
   "version": "${version}",
-  "logoFile": "examplemod.icon.png",
-  "authorList": ["Me!"]
+  "logoFile": "nyx.icon.png",
+  "authorList": ["SciRave"]
 }]

@@ -18,7 +18,6 @@ pluginManagement {
 }
 
 listOf(
-    "1.8.9-forge",
     "1.12.2-forge",
     "1.16.2-forge",
     "1.16.2-fabric",
@@ -44,4 +43,4 @@ listOf(
 // We use the `build.gradle.kts` file for all the sub-projects (cause that's where most the interesting stuff lives),
 // so we need to use a different build file for the original root project.
 rootProject.buildFileName = "root.gradle.kts"
-rootProject.name = "ExampleMod"
+rootProject.name = "Nyx"

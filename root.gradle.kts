@@ -25,8 +25,6 @@ preprocess {
     val fabric11602 = createNode("1.16.2-fabric", 11602, "yarn")
     val forge11602 = createNode("1.16.2-forge", 11602, "srg")
     val forge11202 = createNode("1.12.2-forge", 11202, "srg")
-    val forge10809 = createNode("1.8.9-forge", 10809, "srg")
-
     
     // And then you need to tell the preprocessor which versions it should directly convert between.
     // This should form a directed graph with no cycles (i.e. a tree), which the preprocessor will then traverse to
@@ -48,7 +46,6 @@ preprocess {
     forge11801.link(forge11701)
     forge11701.link(forge11602)
     forge11602.link(forge11202)
-    forge11202.link(forge10809)
     // For any link, you can optionally specify a file containing extra mappings which the preprocessor cannot infer by
     // itself, e.g. forge intermediary names do not contain class names, so you may need to supply mappings for those
     // manually.

@@ -1,15 +1,17 @@
 /*
  * -------------------------------------------------------------------
- * Example Mod
- * Copyright (c) ${year} Me!
+ * Nyx
+ * Copyright (c) 2023 SciRave
  *
- * CC0 License 1.0 Universal
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  * -------------------------------------------------------------------
  */
 
-package net.author.examplemod.mixin;
+package net.scirave.nyx.mixin;
 
-import net.author.examplemod.common.ExampleModUtil;
+import net.scirave.nyx.common.NyxUtil;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -42,6 +44,6 @@ import net.minecraft.client.gui.screen.TitleScreen;
 public class ExampleMixin {
     @Inject(at = @At("TAIL"), method = "<init>*")
     private void init(CallbackInfo info) {
-        ExampleModUtil.LOGGER.info("This line is printed by a cross-version example mod mixin!");
+        NyxUtil.LOGGER.info("This line is printed by a cross-version example mod mixin!");
     }
 }
